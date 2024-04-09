@@ -15,7 +15,7 @@ const LocalStrategy = require('passport-local');
 const User = require('./models/user');
 const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require('helmet');
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const usersRoutes = require('./routes/users');
 // this here requires our router'campgrounds' using the routes folder
